@@ -1,5 +1,5 @@
 # AC-S3-A11
-![S3-A11](https://github.com/chris1085/AC-S3-A11/blob/main/S3-A11.png)
+![S3-A11](https://github.com/chris1085/AC-S3-A11/blob/main/images/S3-A11.png)
 ## Installation
 
 1. clone Repo
