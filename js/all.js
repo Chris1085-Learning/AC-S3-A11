@@ -15,10 +15,9 @@ for (let i = 1; i < 14; i++) {
 }
 
 // Check and Uncheck All event
-function CheckUncheckAll() {
-  const selectAll = document.getElementById('table__input_selectAll')
-
-  if (selectAll.checked == true) {
+const selectAll = document.getElementById('table__input_selectAll')
+selectAll.addEventListener('change', (e) => {
+  if (e.target.checked == true) {
     const checkboxes = document.getElementsByName('rowSelectCheckBox')
     for (let i = 0, n = checkboxes.length; i < n; i++) {
       checkboxes[i].checked = true
@@ -31,7 +30,7 @@ function CheckUncheckAll() {
       checkboxes[i].closest('tr').classList.remove('highlightRow')
     }
   }
-}
+})
 
 // Add 'highlightRow' class when checkbox checked
 const checkboxes = document.getElementsByName('rowSelectCheckBox')
