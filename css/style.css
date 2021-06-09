@@ -296,10 +296,15 @@ body {
   margin-right: 14px;
 }
 
+.tableFixHead {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
 .table__header .table__cell {
   position: -webkit-sticky;
   position: sticky;
-  top: -45px;
+  top: 0px;
   z-index: 1;
   background: var(--header-color);
 }
